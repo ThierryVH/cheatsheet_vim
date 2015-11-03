@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="images/logosimplon.png" />
+		<link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet" type="text/css">
+
+		<title>Cheat Sheet VIM</title>
+
+	</head>
+
+	<body>
+		<p><a id="haut_de_page"></a></p>
+
+		<h1><a href="http://thierryvh.github.io/cheatsheet_index">CHEAT SHEET</a></h1>
+
+		<nav class="nav2">
+
+			<div class="nav1">
+        <a href="http://thierryvh.github.io/cheatsheet_terminal">
+		      <img class="bottom1" src="images/terminal2.png" alt="logo terminal"/>
+		      <img class="top1" src="images/terminal1.png" alt="logo terminal"/>
+			  </a>
+      </div>
+
+			<div class="nav1">
+        <a href="http://thierryvh.github.io/cheatsheet_linux">
+		      <img class="bottom1" src="images/linux2.png" alt="logo Ubuntu"/>
+		      <img class="top1" src="images/linux1.png" alt="logo Ubuntu"/>
+			  </a>
+      </div>
+
+			<div class="nav1">
+        <a href="http://thierryvh.github.io/cheatsheet_git">
+		      <img class="bottom1" src="images/git2.png" alt="logo git"/>
+		      <img class="top1" src="images/git1.png" alt="logo git"/>
+			  </a>
+      </div>
+
+		</nav>
+
+
+
+			<section class="section_cheatsheet">
+
+				<h2 id="h2vim">CHEAT SHEET RACCOURCIS VIM</h2>
+
+				<ul>
+					<li><strong class="strong4">h</strong>Déplace le curseur à gauche.</li>
+				  <li><strong class="strong4">j</strong>Déplace le curseur à droite.</li>
+					<li><strong class="strong4">k</strong>Déplace le curseur vers le haut.</li>
+					<li><strong class="strong4">l</strong>Déplace le curseur vers le bas.</li>
+					<li><strong class="strong4">w</strong>Déplace le curseur au début du mot.</li>
+					<li><strong class="strong4">e</strong>Déplace le curseur à la fin du mot.</li>
+					<li><strong class="strong4">0 (zéro)</strong>Déplace le curseur au début de la ligne.</li>
+					<li><strong class="strong4">$</strong>Déplace le curseur à la fin de la ligne.</li>
+					<li><strong class="strong4">:q!</strong>Quitte Vim sans enregistrer.</li>
+					<li><strong class="strong4">:wq</strong>Quitte Vim en enregistrant.</li>
+					<li><strong class="strong4">Echap</strong>Pour sortir d'une commande.</li>
+					<li><strong class="strong4">x</strong>Efface le caractère sous le curseur.</li>
+					<li><strong class="strong4">i</strong>Pour insérer du texte.</li>
+					<li><strong class="strong4">I</strong>Insérer du texte au début de la ligne.</li>
+					<li><strong class="strong4">a</strong>Pour ajouter du texte.</li>
+					<li><strong class="strong4">A</strong>Insérer du texte à la fin de la ligne.</li>
+					<li><strong class="strong4">o</strong>Ajoute une ligne.</li>
+					<li><strong class="strong4">d</strong>Pour effacer.
+						<ul>
+					    <li><strong class="strong42">dw</strong>Efface du curseur jusqu'au mot suivant.</li>
+					    <li><strong class="strong42">d$</strong>Efface du curseur jusqu'à la fin de la ligne.</li>
+					    <li><strong class="strong42">dd</strong>Efface la ligne.</li>
+				      <li><strong class="strong42">d3w</strong>Efface 3 mots.</li>
+					    <li><strong class="strong42">6dd</strong>Efface 6 lignes d'un coup.</li>
+						</ul>
+					</li>
+					<li><strong class="strong4">G</strong>Aller à la dernière ligne.</li>
+					<li><strong class="strong4">gg</strong>Aller à la première ligne.</li>
+					<li><strong class="strong4">34G</strong>Aller à la ligne 34.</li>
+					<li><strong class="strong4">CTRL + G</strong>Affiche le nombre de lignes, le % et l'emplacement.</li>
+					<li><strong class="strong4">u</strong>Annule l'action précédente.</li>
+					<li><strong class="strong4">U</strong>Annule les changements sur toutes une ligne.</li>
+					<li><strong class="strong4">CTRL + R</strong>Annule l'annulation (rétablir).</li>
+					<li><strong class="strong4">v</strong>Sélectionner.</li>
+					<li><strong class="strong4">y</strong>Copier.</li>
+					<li><strong class="strong4">p</strong>Coller.</li>
+					<li><strong class="strong4">r</strong>Remplacer.
+						<ul>
+							<li><strong class="strong42">rb</strong>Remplacera le caractère sous le curseur par "b".</li>
+						</ul>
+					</li>
+					<li><strong class="strong4">c</strong>Changer.
+						<ul>
+							<li><strong class="strong42">c4w</strong>Efface 4 mots à partir du curseur et entre en insertion "i".</li>
+						</ul>
+					</li>
+					<li><strong class="strong4">/Thierry</strong>Recherche le mot "Thierry".
+						<ul>
+							<li><strong class="strong42">n</strong>Recherche à nouveau le même texte.</li>
+							<li><strong class="strong42">N</strong>Même chose mais dans l'autre sens.</li>
+						</ul>
+					</li>
+					<li><strong class="strong4">:s/lee/le/g</strong>Remplace "lee" par "le" dans la ligne.
+						<ul>
+							<li><strong class="strong42">3,28s/lee/le/g</strong>Même chose mais des lignes 3 à 28.</li>
+							<li><strong class="strong42">%s/lee/le/g</strong>Même chose mais dans tout le fichier.</li>
+							<li><strong class="strong42">%s/lee/le/gc</strong>Même chose mais avec confimation.</li>
+						</ul>
+					</li>
+					<li><strong class="strong4">:w Fichier1</strong>Enregistre le fichier "Fichier1".</li>
+					<li><strong class="strong4">:!RM Fichier1</strong>Supprime Fichier1.</li>
+				</ul>
+
+			</section>
+
+		<p><a href="#haut_de_page"><img id="fleche" src="images/fleche.png" alt="flèche retour vers le haut"></a></p>
+
+	</body>
+
+</html>
