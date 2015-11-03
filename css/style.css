@@ -1,0 +1,202 @@
+body {
+background-color: #34495e;
+font-family: Coda;
+}
+
+/* Titres H1 et H2 */
+
+h1 {
+  width: 450px;
+  margin: 50px auto 40px auto;
+color: #ffffff;
+font-size: 4.3em;
+}
+
+
+h2 {
+  margin: 70px 0 50px 5%;
+  font-size: 2em;
+}
+
+.h2terminal {
+  color: #e6910c;
+}
+
+#h2linux{
+color: #01ad56;
+}
+
+#h2git {
+  color: #f00b75;
+}
+
+#h2vim {
+color: #839395;
+}
+
+/* Navigation */
+
+.nav_index{
+display: block;
+width: 480px;
+margin: 80px auto 0 auto;
+font-family: arial;
+font-size: 1.2em;
+}
+
+.nav2{
+width: 340px;
+margin: -20px auto 0 auto;
+}
+
+/* Propriétés des sections */
+
+section{
+font-family: coda;
+}
+
+.section_cheatsheet{
+  margin-left: 3%;
+}
+
+/* Liens */
+
+a {
+text-decoration: none;
+color: #fff;
+}
+
+/* Pour enlever les pointillés lors du clic */
+
+a:focus{
+outline:0;
+}
+
+/* Listes */
+
+ul{
+  list-style-type:none;
+}
+
+li{
+  margin: 7px 0;
+  color: #fff;
+}
+
+/* Propriétés des <strong> dans les listes */
+
+.strong1{
+  margin: 0 1%;
+  color: #e6910c;
+}
+
+.strong2{
+  margin: 0 1%;
+  color: #01ad56;
+}
+
+.strong3 {
+  margin: 0 1%;
+  color: #f00b75;
+}
+
+.strong4 {
+  margin: 0 1%;
+  color: #839395;
+}
+
+/* Propriétés des <strong> dans les sous-listes */
+
+.strong12{
+  margin: 0 2%;
+  color: #e6910c;
+}
+
+.strong22{
+  margin: 0 2%;
+  color: #01ad56;
+}
+
+.strong32{
+  margin: 0 2%;
+  color: #f00b75;
+}
+
+.strong42 {
+  margin: 0 2%;
+  color: #839395;
+}
+
+/* Positionnement et taille images */
+
+img{
+display: inline-block;
+width: 225px ;
+height: 175px ;
+}
+
+#img2, #img4{
+float: right;
+}
+
+/* Transitions images index */
+
+.cf {
+  position:relative;
+  height:175px;
+  width:225px;
+  margin:5px;
+  display: inline-block;
+}
+
+.cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cf .top:hover {
+  opacity:0;
+}
+
+/* Transitions images autres pages */
+
+.nav1{
+position: relative;
+height: 75px;
+width: 100px;
+margin: 0 5px;
+display: inline-block;
+}
+
+.nav1 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav1 img.top1:hover {
+  opacity:0;
+}
+
+.top1, .bottom1{
+  height: 75px;
+  width: 100px;
+
+}
+
+/* Retour vers le haut de page */
+
+#fleche {
+position: fixed;
+right: 50px;
+bottom: 50px;
+width: 50px;
+height: 50px;
+}
